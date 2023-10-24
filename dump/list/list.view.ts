@@ -16,7 +16,10 @@ namespace $.$$ {
 		}
 		
 		expand_all( event?: Event, blacklist = new Set ) {
-			this.Dump(1).expand_all( event, blacklist )
+			this.Dump(1).expand_all( event,
+				// @ts-ignore
+				blacklist
+			)
 		}
 		
 	}
